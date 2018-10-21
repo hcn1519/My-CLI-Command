@@ -29,3 +29,21 @@ $ xcrun simctl io booted screenshot screen.png
 ```
 $ xcrun simctl io booted recordVideo demo3.mov
 ```
+
+## Build Xcode Project using Command Line
+
+```
+$ xcodebuild -project myProject.xcodeproj
+
+// Using workspace
+$ xcodebuild -workspace myProject.xcworkspace
+
+// Specify scheme
+$ xcodebuild -project myProject.xcodeproj -scheme myScheme
+
+// Specify build-configuration
+$ xcodebuild -project myProject.xcodeproj -configuration Debug
+
+// Specify destination
+$ xcodebuild -project myProject.xcodeproj -destination "OS=12.0,name=iPhone X"
+```
